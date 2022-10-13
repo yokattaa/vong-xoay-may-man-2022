@@ -1,0 +1,176 @@
+.hc-luckywheel ul,
+.hc-luckywheel li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.popup.popup_rotation_luck .content_popup a.tg_bad_luck_ft img{
+  margin: -81px -34px 0px 20px !important;
+}
+
+.hc-luckywheel {
+  z-index: 4;
+  /* position: absolute; */
+  width: 597px; /*Change this when change size*/
+  height: 606px; /*Change this when change size*/
+  border-radius: 50%;
+  border-style: solid;
+  background: url(../images/vien-vong-quay.png) center center no-repeat;
+  background-size: cover;
+  border: none !important;
+  /* top: 41%;
+  margin: -250px 0px 0px 0px;
+  left: -320px; */
+  z-index: 69;
+  margin: 0 auto;
+}
+.content_popup .hc-luckywheel-container .kt-t6{
+  font-size: 32px !important;
+  line-height: 28px !important;
+}
+.hc-luckywheel::before{
+  /* content: url(../images/banhxe.png); */
+  position: absolute;
+  top: -46px;
+  left: -40px;
+  width: 744px;
+  height: 744px;
+  min-width: 744px;
+  min-height: 744px;
+}
+/* .hc-luckywheel::after{
+  content: url(../images/arrow_pick_vqmm.png);
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  right: 0px;
+} */
+.hc-luckywheel-container {
+  position: absolute;
+  left: 362px;
+  top: 77px;
+  /* width: inherit; */
+  /* height: inherit; */
+  border-radius: inherit;
+  background-clip: padding-box;
+  /* background-color: #ffcb3f; */
+  -webkit-transition: transform 6s ease;
+  transition: transform 6s ease;
+  z-index: 1;
+}
+
+.hc-luckywheel-container canvas {
+  width: inherit;
+  height: inherit;
+  /* border-radius: 50%; */
+}
+
+.hc-luckywheel-list {
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  z-index: 2;
+}
+
+.hc-luckywheel-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+.hc-luckywheel-item span {
+  position: relative;
+  display: block;
+  padding-top: 20px;
+  /* width: 50px; */
+  margin: 0 auto;
+  text-align: center;
+  -webkit-transform-origin: 50% 250px; /*Change this when change size*/
+  -ms-transform-origin: 50% 250px; /*Change this when change size*/
+  transform-origin: 50% 250px;
+} /*Change this when change size*/
+
+.hc-luckywheel-item img {
+  position: relative;
+  top: -20px;
+  left: 0px;
+  width: 100px; /*Change this when change size*/
+  height: 100px;
+} /*Change this when change size*/
+
+.hc-luckywheel-btn {
+  position: absolute;
+  left: 47%; /*Change this when change size*/
+  top: 277px; /*Change this when change size*/
+  z-index: 3;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: #f4e9cc;
+  background-color: #e44025;
+  line-height: 80px;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.hc-luckywheel-btn::after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 10px;
+  top: -46px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 30px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #e44025;
+}
+
+.hc-luckywheel-btn.disabled {
+  pointer-events: none;
+  background: #b07a7b;
+  color: #ccc;
+}
+
+.hc-luckywheel-btn.disabled::after {
+  border-bottom-color: #b07a7b;
+}
+
+/*body{ margin:0; padding:0; height:100vh; width:100%; }
+
+.bg {
+  background-image: url('../images/bg.png');
+}
+*/
+
+/* tung */
+.content-t{
+  background: url(/images/mau-nen.png);
+  background-size: 100% 100%;
+  min-height: 1111px;
+  width: 100%;
+}
+
+@media (min-width: 768px){
+  .content_popup .col-sm-offset-6{
+    margin-left: 59% !important;
+    max-width: 311px;
+  }
+  
+}
+
+@media (max-width: 769px){
+  
+}
