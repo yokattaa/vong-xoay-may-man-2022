@@ -231,76 +231,76 @@ jQuery('#txt_search_new, #search_domains').click(function(){
 
 // SHOW POPUP SLIDE INDEX
 
-$(document).ready(function(){
-	// add link rel= nofollow
-	jQuery('.tg_popup_slide ul>li a').attr("rel","nofollow");
-			jQuery('.tg_popup_slide').click(function(event) {
- 		 //if you click on anything except the modal itself or the "open modal" link, close the modal
- 		 if (!jQuery(event.target).closest(".tg_popup_slide .content_popup").length) {
- 		 	jQuery("body").find(".tg_popup_slide .content_popup").hide();
- 		 	jQuery(".tg_popup_slide").fadeOut(300);
- 		 }
- 		});
-	// slide 1
-	/*jQuery('.tg_popup_slide ul>li:nth-child(1) img').attr('src','https://img.tenten.vn/k/lp/images/happy-day-2021.jpg');
-	jQuery('.tg_popup_slide ul>li:nth-child(1) a').attr('href','https://tenten.vn/ten-mien/happy-day-2021?code=eFXvSEdlrhxWauyp&idCampaign=507');*/
-	// //slide 2
-	jQuery('.tg_popup_slide ul>li:nth-child(2) img').attr('src','https://img.tenten.vn/k/lp/images/popup_tenmienzalo.jpg');
-	jQuery('.tg_popup_slide ul>li:nth-child(2) a').attr('href','https://tintuc.tenten.vn/tenten-vn-ra-mat-tinh-nang-dang-ky-va-gia-han-nhanh-qua-zalo/?code=aTAUNbkPzYwfeGyx&idCampaign=397');
-	//slide 3
-	// jQuery('.tg_popup_slide ul>li:nth-child(1) img').attr('src','https://img.tenten.vn/k/lp/images/popup-happy-day-domain.jpg');
-	// jQuery('.tg_popup_slide ul>li:nth-child(1) a').attr('href','https://tenten.vn/ten-mien/happy-day-ngay-vang-gia-soc');
-	// //slide 4
-	// jQuery('.tg_popup_slide ul>li:nth-child(2) img').attr('src','https://img.tenten.vn/k/lp/images/popup-happy-day-hosting.jpg');
-	// jQuery('.tg_popup_slide ul>li:nth-child(2) a').attr('href','https://tenten.vn/hosting/happy-day-secure-web-hosting');
-	//Remove slide 
-	jQuery('.tg_popup_slide ul>li:nth-child(1), .tg_popup_slide ul>li:nth-child(3),.tg_popup_slide ul>li:nth-child(3),.tg_popup_slide ul>li:nth-child(4),.tg_popup_slide ul>li:nth-child(5),.tg_popup_slide ul>li:nth-child(6)').remove();
-	jQuery('.tg_popup_slide').find('.tg_close_popupslide').click(function(){
-		jQuery(this).closest('.tg_popup_slide').fadeOut(300);
-	});
-	setTimeout(function(){
-		jQuery('.tg_popup_slide').show();
-		jQuery('.tg_popup_slide ul').slick('refresh');
-	},100); 
-	if($('.tg_popup_slide').length>0){
-		$('.tg_popup_slide ul').slick({
-			arrows:false,
-			dots: true,
-			infinite: false,
-			speed: 300,
-			slidesToShow: 1,
-			fade:true,
-			initialSlide : 0,
- 			autoplay:true,
- 			autoplaySpeed: 3000,
- 			draggable: false,
- 			swipe: false,
- 			swipeToSlide: false,
- 			touchMove: false,
- 			pauseOnHover: true,
- 			pauseOnFocus: true,
- 			slidesToScroll: 1,
-			 			// customPaging : function(slider, i) {
-			 			// 	var thumb = jQuery(slider.$slides[i]).data();
-       //      // return '<a>'+(i+1)+'</a>'; // <-- old
-       //      return '<a>'+(''+(i+1)).slice(-2)+'</a>'; // <-- new
-       //  },
-        responsive: [
-        {
-        	breakpoint: 1024,
-        	settings: {
-        		slidesToShow: 1,
-        		slidesToScroll: 1,
-        		infinite: false,
-        		dots: true
-        	}
-        }
-        ]
-    });
-	}
+// $(document).ready(function(){
+// 	// add link rel= nofollow
+// 	jQuery('.tg_popup_slide ul>li a').attr("rel","nofollow");
+// 			jQuery('.tg_popup_slide').click(function(event) {
+//  		 //if you click on anything except the modal itself or the "open modal" link, close the modal
+//  		 if (!jQuery(event.target).closest(".tg_popup_slide .content_popup").length) {
+//  		 	jQuery("body").find(".tg_popup_slide .content_popup").hide();
+//  		 	jQuery(".tg_popup_slide").fadeOut(300);
+//  		 }
+//  		});
+// 	// slide 1
+// 	/*jQuery('.tg_popup_slide ul>li:nth-child(1) img').attr('src','https://img.tenten.vn/k/lp/images/happy-day-2021.jpg');
+// 	jQuery('.tg_popup_slide ul>li:nth-child(1) a').attr('href','https://tenten.vn/ten-mien/happy-day-2021?code=eFXvSEdlrhxWauyp&idCampaign=507');*/
+// 	// //slide 2
+// 	jQuery('.tg_popup_slide ul>li:nth-child(2) img').attr('src','https://img.tenten.vn/k/lp/images/popup_tenmienzalo.jpg');
+// 	jQuery('.tg_popup_slide ul>li:nth-child(2) a').attr('href','https://tintuc.tenten.vn/tenten-vn-ra-mat-tinh-nang-dang-ky-va-gia-han-nhanh-qua-zalo/?code=aTAUNbkPzYwfeGyx&idCampaign=397');
+// 	//slide 3
+// 	// jQuery('.tg_popup_slide ul>li:nth-child(1) img').attr('src','https://img.tenten.vn/k/lp/images/popup-happy-day-domain.jpg');
+// 	// jQuery('.tg_popup_slide ul>li:nth-child(1) a').attr('href','https://tenten.vn/ten-mien/happy-day-ngay-vang-gia-soc');
+// 	// //slide 4
+// 	// jQuery('.tg_popup_slide ul>li:nth-child(2) img').attr('src','https://img.tenten.vn/k/lp/images/popup-happy-day-hosting.jpg');
+// 	// jQuery('.tg_popup_slide ul>li:nth-child(2) a').attr('href','https://tenten.vn/hosting/happy-day-secure-web-hosting');
+// 	//Remove slide 
+// 	jQuery('.tg_popup_slide ul>li:nth-child(1), .tg_popup_slide ul>li:nth-child(3),.tg_popup_slide ul>li:nth-child(3),.tg_popup_slide ul>li:nth-child(4),.tg_popup_slide ul>li:nth-child(5),.tg_popup_slide ul>li:nth-child(6)').remove();
+// 	jQuery('.tg_popup_slide').find('.tg_close_popupslide').click(function(){
+// 		jQuery(this).closest('.tg_popup_slide').fadeOut(300);
+// 	});
+// 	setTimeout(function(){
+// 		jQuery('.tg_popup_slide').show();
+// 		jQuery('.tg_popup_slide ul').slick('refresh');
+// 	},100); 
+// 	if($('.tg_popup_slide').length>0){
+// 		$('.tg_popup_slide ul').slick({
+// 			arrows:false,
+// 			dots: true,
+// 			infinite: false,
+// 			speed: 300,
+// 			slidesToShow: 1,
+// 			fade:true,
+// 			initialSlide : 0,
+//  			autoplay:true,
+//  			autoplaySpeed: 3000,
+//  			draggable: false,
+//  			swipe: false,
+//  			swipeToSlide: false,
+//  			touchMove: false,
+//  			pauseOnHover: true,
+//  			pauseOnFocus: true,
+//  			slidesToScroll: 1,
+// 			 			// customPaging : function(slider, i) {
+// 			 			// 	var thumb = jQuery(slider.$slides[i]).data();
+//        //      // return '<a>'+(i+1)+'</a>'; // <-- old
+//        //      return '<a>'+(''+(i+1)).slice(-2)+'</a>'; // <-- new
+//        //  },
+//         responsive: [
+//         {
+//         	breakpoint: 1024,
+//         	settings: {
+//         		slidesToShow: 1,
+//         		slidesToScroll: 1,
+//         		infinite: false,
+//         		dots: true
+//         	}
+//         }
+//         ]
+//     });
+// 	}
 
 	
-}); 
+// }); 
 
 
  // END SHOW POPUP SLIDE INDEX

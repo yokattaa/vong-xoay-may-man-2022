@@ -168,37 +168,37 @@
     /**
      * @return {[type]} [description]
      */
-    function events() {
-        bind(btn, "click", function () {
-            document.getElementById('show_error_lucky_wheel').style.display = 'none';
-            var email = document.getElementById('email_lucky_wheel').value;
-            // if (email && email != '') {
-            //     if (isEmail(email) == 1) {
-                    addClass(btn, "disabled");
-                    document.getElementById('bt_information_ft').style.pointerEvents = 'none';
-                    fnGetPrize(function (data) {
-                        if (data[0] == null && !data[1] == null) {
-                            return;
-                        }
-                        optsPrize = {
-                            prizeId: data[0],
-                            chances: data[1]
-                        };
-                        deg = deg || 0;
-                        deg = deg + (360 - (deg % 360)) + (360 * 10 - data[0] * (360 / num));
-                        runRotate(deg);
-                    });
-                    bind(container, transitionEnd, eGot);
-            //     } else {
-            //         document.getElementById('show_error_lucky_wheel').innerHTML = 'Email khĂ´ng Ä‘Ăºng Ä‘á»‹nh dáº¡ng';
-            //         document.getElementById('show_error_lucky_wheel').style.display = 'block';
-            //     }
-            // } else {
-            //     document.getElementById('show_error_lucky_wheel').innerHTML = 'Vui lĂ²ng nháº­p email cá»§a báº¡n';
-            //     document.getElementById('show_error_lucky_wheel').style.display = 'block';
-            // }
-        });
-    }
+    // function events() {
+    //     bind(btn, "click", function () {
+    //         document.getElementById('show_error_lucky_wheel').style.display = 'none';
+    //         var email = document.getElementById('email_lucky_wheel').value;
+    //         // if (email && email != '') {
+    //         //     if (isEmail(email) == 1) {
+    //                 addClass(btn, "disabled");
+    //                 document.getElementById('bt_information_ft').style.pointerEvents = 'none';
+    //                 fnGetPrize(function (data) {
+    //                     if (data[0] == null && !data[1] == null) {
+    //                         return;
+    //                     }
+    //                     optsPrize = {
+    //                         prizeId: data[0],
+    //                         chances: data[1]
+    //                     };
+    //                     deg = deg || 0;
+    //                     deg = deg + (360 - (deg % 360)) + (360 * 10 - data[0] * (360 / num));
+    //                     runRotate(deg);
+    //                 });
+    //                 bind(container, transitionEnd, eGot);
+    //         //     } else {
+    //         //         document.getElementById('show_error_lucky_wheel').innerHTML = 'Email khĂ´ng Ä‘Ăºng Ä‘á»‹nh dáº¡ng';
+    //         //         document.getElementById('show_error_lucky_wheel').style.display = 'block';
+    //         //     }
+    //         // } else {
+    //         //     document.getElementById('show_error_lucky_wheel').innerHTML = 'Vui lĂ²ng nháº­p email cá»§a báº¡n';
+    //         //     document.getElementById('show_error_lucky_wheel').style.display = 'block';
+    //         // }
+    //     });
+    // }
 
     function eGot() {
         if (optsPrize.chances == null) {

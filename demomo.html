@@ -1,54 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://img.tenten.vn/k/lp/vongquaymayman_2021/css/style.css">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css"
-		href="https://img.tenten.vn/k/lp/vongquaymayman_2021/css/hc-canvas-luckwheel.css">
 </head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: red;
+    }
+
+    .mainbox {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        margin-top: 50px;
+    }
+
+    .mainbox::after {
+        position: absolute;
+        content: "";
+        /* width: 100%; */
+        /* height: 100%; */
+        background: blue;
+        /* left: 5%; */
+        /* top: 48%; */
+        transform: rotate(90deg);
+    }
+
+    .box {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 50%;
+        border: 10px solid black;
+        overflow: hidden;
+        transition: all ease-in-out 5s;
+        transform: rotate(90deg);
+    }
+
+    span {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: absolute;
+    }
+    .span1{
+        clip-path: polygon(0 17%,0 50%,50% 50% );
+        background-color: green;
+    }
+    .span2{
+        clip-path: polygon(0 17%,30% 0,50% 50% );
+        background-color: yellow;
+    }
+    .span3 {
+        clip-path: polygon(30% 0,71% 0,50% 50% );
+        background-color: bisque;
+    }
+    .span4 {
+        clip-path: polygon(71% 0,100% 18%,50% 50% );
+        background-color: aqua;
+    }
+    .span4 {
+        clip-path: polygon(100% 18%,100% 50%,50% 50% );
+        background-color: #ffffff;
+    }
+    .box2 .span3{
+background-color: chartreuse;
+    }
+    .box2{
+        width: 100%;
+        height: 100%;
+        transform: rotate(180deg);
+    }
+</style>
+
 <body>
-    <div class="popup popup_rotation_luck bg_opa_trans">
-        <div class="content_popup">
-            <div class="row">
-                <section id="luckywheel" class="hc-luckywheel">
-                    <div class="hc-luckywheel-container">
-                        <canvas class="hc-luckywheel-canvas" width="500px" height="500px">Vòng Quay May Mắn</canvas>
-                    </div>
-
-                    <a class="hc-luckywheel-btn" id="hc-luckywheel-btn" href="javascript:void(0)" >Quay</a>
-                </section>
-                <div class="col-sm-6 col-sm-offset-6">
-                    <div class="tg_voucher_code_pop">
-                        <p>Chúc mừng bạn đã trúng thưởng</p>
-                        <h4>Voucher</h4>
-                        <h5 class="show_note"></h5>
-                        <p>Mời quý khách đăng nhập để nhận mã về email</p>
-                        <div class="note_vqmm">
-                            <cite>Lưu ý: Không áp dụng đồng thời các chương trình khuyến mãi</cite>
-                        </div>
-                        <div class="tg_voucher_login">
-                            <p>Bạn đã có tài khoản TENTEN?</p>
-                            <a href="javascript:void(0)" class="bt_login_rotation">Đăng nhập</a>
-                        </div>
-                        <div class="tg_use_offer_sop">
-                            <p>Sử dụng ưu đãi ngay nhé bạn!</p>
-                            <p>Xin trân thành cảm ơn</p>
-                        </div>
-                    </div>
-                    <div class="tg_form_information_nd">
-
-                        <a href="javascript:void(0);" class="bt_information_ft" id="bt_information_ft">Thử vận may
-                            ngay</a>
-                        <a href="javascript:void(0);" class="tg_bad_luck_ft">Không, tôi không cảm thấy may mắn <img
-                                src="https://img.tenten.vn/k/lp/vongquaymayman_2021/images/close_popvqmm.png"> </a>
-                    </div>
-                </div>
-            </div>
+    <div class="mainbox" id="mainbox">
+        <div id="box1" class="box">
+            <span class="font span1">1</span>
+            <span class="font span2">2</span>
+            <span class="font span3">3</span>
+            <span class="font span4">4</span>
+            <span class="font span5">5</span>
         </div>
+        <div class="box2">
+            <span class="font span1">6</span>
+            <span class="font span2">7</span>
+            <span class="font span3">8</span>
+            <span class="font span4">9</span>
+            <span class="font span5">10</span>
+        </div>
+        <button class="spin" onclick="span()">nhan </button>
     </div>
+    
 </body>
-<script src="/js/hc-canvas-luckwheel.js"></script>
+<script>
+
+</script>
+
 </html>
